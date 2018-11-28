@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :relationships
+  resources :users
   resources :assignments
   resources :teachers
   post '/login', to: 'auth#create'
