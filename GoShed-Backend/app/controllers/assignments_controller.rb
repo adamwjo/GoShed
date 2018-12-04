@@ -8,6 +8,7 @@ class AssignmentsController < ApplicationController
         @assignment = Assignment.new
         @assignment.user_id = params[:user_id]
         @assignment.file = params[:file]
+        @assignment.name = params[:name]
         @assignment.save
         render json: @assignment
     end

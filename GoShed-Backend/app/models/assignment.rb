@@ -1,4 +1,4 @@
 class Assignment < ApplicationRecord
-    belongs_to :user
+    has_many :users
     mount_uploader :file, FileUploader
 end
